@@ -1,3 +1,9 @@
+:root {
+    --text-main-color: #E3CE04;
+    --text-main-highlight: #F9E205;
+    --background-color: #5a2491;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -6,9 +12,62 @@
     transition-duration: 200ms;
 }
 
+body {
+    background-image: url('public/Toast.jpg');
+    background: var(--background-color);
+    background-size: 100%;
+}
+
+nav {
+    padding: 0.5rem;
+}
+
+.home-button {
+    text-decoration: none;
+    width: 200px;
+    border-radius: 0.5rem;
+}
+
+.toast-team-picture {
+    max-width: 1100px;
+    max-height: 750px;
+    place-items: center;
+    overflow: hidden;
+    display: grid;
+    margin: auto;
+    border-radius: .5rem;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 4rem 4rem;
+}
+
+.meet-header {
+    display: grid;
+    align-items: center;
+    flex-direction: column;
+    color: var(--text-main-color);
+    font-size: 3rem;
+}
+
+.roster-names {
+    display: column;
+    align-items: center;
+}
+
 .name-text {
-    display: flex;
+    display: grid;
     align-items: center;
     flex-direction: column;
     text-decoration: none;
+    color: var(--text-main-color);
+    font-size: 1.6rem;
+    font-weight: 900;
+    width: fit-content;
+    margin: auto;
+}
+
+.name-text:hover {
+    color: var(--text-main-highlight);
+    text-decoration: underline;
 }
