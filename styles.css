@@ -10,12 +10,21 @@
     box-sizing: border-box;
     font-family: 'inter', sans-serif;
     transition-duration: 200ms;
+    border: solid var(--text-main-color);
+    border-width: 5px;
 }
 
 body {
     background-image: url('public/Toast.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 6rem;
+}
+
+.name-container {
     background: var(--background-color);
-    background-size: 100%;
 }
 
 nav {
@@ -26,6 +35,10 @@ nav {
     text-decoration: none;
     width: 200px;
     border-radius: 0.5rem;
+}
+
+.intro-header {
+
 }
 
 .toast-team-picture {
@@ -39,35 +52,52 @@ nav {
     align-items: center;
     width: 100%;
     height: auto;
-    padding: 4rem 4rem;
+    padding: 3rem 3rem;
 }
 
 .meet-header {
-    display: grid;
+    display: flex;
     align-items: center;
     flex-direction: column;
     color: var(--text-main-color);
     font-size: 3rem;
+    padding: 2rem;
 }
 
 .roster-names {
-    display: column;
+    display: grid;
     align-items: center;
+    margin: auto;
+    flex-direction: column;
 }
 
 .name-text {
-    display: grid;
-    align-items: center;
-    flex-direction: column;
     text-decoration: none;
     color: var(--text-main-color);
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     font-weight: 900;
+    display: inline-block;
+    align-items: row;
+    flex-direction: column;
     width: fit-content;
+    justify-content: center;
     margin: auto;
+    padding: 0.2rem;
+}
+
+.fa-star {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 
 .name-text:hover {
     color: var(--text-main-highlight);
     text-decoration: underline;
+}
+
+@media (min-width: 640px) {
+
+    .name-text {
+        font-size: 2rem;
+    }
 }
