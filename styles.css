@@ -26,27 +26,33 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-    padding: 6rem;
+    padding: 1rem;
 }
 
 .name-container {
     background: var(--background-color);
 }
 
+.main-header {
+    display: flex;
+}
+
 nav {
     padding: 0.5rem;
+    display: flex;
 }
 
 .home-button {
     text-decoration: none;
-    width: 200px;
+    width: 150px;
     border-radius: 0.5rem;
 }
 
 .nav-buttons {
     display: flex;
-    flex-direction: row;
+    flex-direction: end;
     align-items: end;
+    
 }
 
 .intro-header {
@@ -57,6 +63,34 @@ nav {
     font-size: 6rem;
 }
 
+.directory-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem;
+}
+
+.directory-link {
+    padding: 1rem 4rem;
+    border: none;
+    outline: none;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+    background-color: var(--background-color);
+    color: var(--text-main-color);
+    font-weight: 700;
+    cursor: pointer;
+    gap: 1rem;
+    text-decoration: none;
+    display: flex;
+}
+
+.directory-link:hover {
+    box-shadow: 0 0 15px var(--text-main-highlight);
+}
+
 .about-us-front-page {
     display: flex;
     justify-content: center;
@@ -65,7 +99,12 @@ nav {
     font-size: 3rem;
 }
 
-.about-us-info {}
+.about-us-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-main-color);
+}
 
 .toast-team-picture {
     max-width: 1100px;
@@ -122,6 +161,14 @@ nav {
 }
 
 @media (min-width: 640px) {
+
+    .body {
+        padding: 6rem;
+    }
+    
+    .home-button {
+        width: 200px;
+    }
 
     .name-text {
         font-size: 2rem;
