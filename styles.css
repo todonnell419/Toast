@@ -10,11 +10,11 @@
     box-sizing: border-box;
     font-family: 'inter', sans-serif;
     transition-duration: 200ms;
-    border: solid var(--text-main-color);
-    border-width: 5px;
+    /*   border: solid var(--text-main-color);
+    border-width: 5px; */
 }
 
-/*center stuff spped run =
+/*center stuff speed run =
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,24 +35,42 @@ body {
 
 .main-header {
     display: flex;
+    padding-bottom: 2rem;
 }
 
 nav {
     padding: 0.5rem;
     display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    gap: 1rem;
+    text-decoration: none;
 }
 
 .home-button {
     text-decoration: none;
-    width: 150px;
+    width: 200px;
     border-radius: 0.5rem;
+    display: flex;
+    align-self: start;
+    cursor: pointer;
 }
 
 .nav-buttons {
     display: flex;
-    flex-direction: end;
-    align-items: end;
-    
+    width: fit-content;
+    font-size: 2.5rem;
+    color: var(--text-main-color);
+    border: none;
+}
+
+.fa-brands {
+    float: left;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
 }
 
 .intro-header {
@@ -61,6 +79,7 @@ nav {
     align-items: center;
     color: var(--text-main-color);
     font-size: 6rem;
+    font-weight: 900;
 }
 
 .directory-links {
@@ -97,6 +116,9 @@ nav {
     align-items: center;
     color: var(--text-main-color);
     font-size: 3rem;
+    text-align: center;
+    font-weight: 900;
+    background: var(--background-color);
 }
 
 .about-us-info {
@@ -104,6 +126,10 @@ nav {
     justify-content: center;
     align-items: center;
     color: var(--text-main-color);
+    background: var(--background-color);
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 0.5rem;
 }
 
 .toast-team-picture {
@@ -127,6 +153,7 @@ nav {
     color: var(--text-main-color);
     font-size: 3rem;
     padding: 2rem;
+    font-weight: 800;
 }
 
 .roster-names {
@@ -139,7 +166,7 @@ nav {
 .name-text {
     text-decoration: none;
     color: var(--text-main-color);
-    font-size: 1.3rem;
+    font-size: 2rem;
     font-weight: 900;
     display: inline-block;
     align-items: row;
@@ -160,12 +187,32 @@ nav {
     text-decoration: underline;
 }
 
+.tournament-container {
+    grid-template-rows: 150px 100px 200px;
+    grid-template-columns: 150px 100px 200px;
+    background: var(--background-color);
+    color: var(--text-main-color);
+    font-size: 1rem;
+    font-weight: 700;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.tournament-header {
+    background: var(--background-color);
+    color: var(--text-main-color);
+    font-size: 1.5rem;
+    font-weight: 700;
+    width: 100%;
+    justify-content: space-between;
+}
+
 @media (min-width: 640px) {
 
     .body {
         padding: 6rem;
     }
-    
+
     .home-button {
         width: 200px;
     }
