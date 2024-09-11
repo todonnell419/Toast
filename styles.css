@@ -188,14 +188,20 @@ nav {
 }
 
 .tournament-container {
-    grid-template-rows: 150px 100px 200px;
-    grid-template-columns: 150px 100px 200px;
+    display: grid;
+    grid-template-columns: 35% 20% 45%;
+    grid-template-rows: repeat(6, 1fr);
     background: var(--background-color);
     color: var(--text-main-color);
     font-size: 1rem;
     font-weight: 700;
     width: 100%;
     justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    border: var(--text-main-color);
+    border-width: 3px;
+    text-align: center;
 }
 
 .tournament-header {
@@ -204,7 +210,16 @@ nav {
     font-size: 1.5rem;
     font-weight: 700;
     width: 100%;
-    justify-content: space-between;
+    overflow: none;
+    text-decoration: underline;
+}
+
+.t-loss {
+    background-color: rgb(250, 42, 42);
+}
+
+.t-win {
+    background-color: rgb(57, 151, 57);
 }
 
 @media (min-width: 640px) {
