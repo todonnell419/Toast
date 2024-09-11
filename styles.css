@@ -108,6 +108,7 @@ nav {
 
 .directory-link:hover {
     box-shadow: 0 0 15px var(--text-main-highlight);
+    color: var(--text-main-highlight);
 }
 
 .about-us-front-page {
@@ -166,7 +167,7 @@ nav {
 .name-text {
     text-decoration: none;
     color: var(--text-main-color);
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 900;
     display: inline-block;
     align-items: row;
@@ -220,6 +221,57 @@ nav {
 
 .t-win {
     background-color: rgb(57, 151, 57);
+}
+
+.tyler-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.tyler-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tyler-picture {
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: cover;
+    padding-bottom: 2rem;
+}
+
+.tyler-container h2 {
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.tyler-about {
+    color: var(--text-main-color);
+    background-color: var(--background-color);
+    text-align: center;
+}
+
+.footer-info {
+    color: var(--text-main-color);
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 3rem;
+}
+
+.get-burnt {
+    text-decoration: underline;
+    color: var(--text-main-color);
+}
+
+.get-burnt:hover {
+    color: var(--text-main-highlight);
 }
 
 @media (min-width: 640px) {
