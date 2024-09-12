@@ -14,6 +14,10 @@
     border-width: 5px; */
 }
 
+html {
+    height: 100%;
+}
+
 /*center stuff speed run =
     display: flex;
     justify-content: center;
@@ -27,6 +31,10 @@ body {
     background-attachment: fixed;
     background-size: cover;
     padding: 1rem;
+    overflow: auto;
+    min-height: 100%;
+    flex-direction: column;
+    display: flex;
 }
 
 .name-container {
@@ -245,6 +253,7 @@ nav {
     max-height: 90%;
     object-fit: cover;
     padding-bottom: 2rem;
+    border-radius: 1rem;
 }
 
 .tyler-container h2 {
@@ -255,14 +264,20 @@ nav {
 .tyler-about {
     color: var(--text-main-color);
     background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 0.5rem;
+}
+
+.about-me {
     text-align: center;
 }
 
 .footer-info {
     color: var(--text-main-color);
-    text-align: center;
     font-size: 1.5rem;
-    padding-top: 3rem;
+    margin-top: auto;
 }
 
 .get-burnt {
