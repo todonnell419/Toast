@@ -70,10 +70,11 @@ nav {
 
 .nav-buttons {
     display: flex;
-    width: fit-content;
     font-size: 2.5rem;
     color: var(--text-main-color);
     border: none;
+    width: fit-content;
+    height: fit-content;
 }
 
 .fa-brands {
@@ -209,7 +210,7 @@ nav {
 
 .tournament-container {
     display: grid;
-    grid-template-columns: 35% 20% 45%;
+    grid-template-columns: 20% 15% 35%;
     grid-template-rows: repeat(1, 0.3fr, 5, 1fr);
     background: var(--background-color);
     color: var(--text-main-color);
@@ -219,10 +220,11 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem;
-    border: var(--text-main-color);
-    border-width: 3px;
     text-align: center;
+    overflow: hidden;
+    gap: 3rem;
 }
+
 
 .tournament-header {
     background: var(--background-color);
@@ -235,11 +237,13 @@ nav {
 }
 
 .t-loss {
-    background-color: rgb(250, 42, 42);
+    color: rgb(250, 4, 4);
+    /* background-color: rgb(250, 42, 42); */
 }
 
 .t-win {
-    background-color: rgb(57, 151, 57);
+    color: rgb(57, 151, 57);
+   /* background-color: rgb(57, 151, 57); */
 }
 
 .tyler-container {
@@ -247,7 +251,7 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0.5rem;
+    padding: 2rem;
 }
 
 .tyler-image {
@@ -289,6 +293,7 @@ nav {
     color: var(--text-main-color);
     font-size: 1.5rem;
     margin-top: auto;
+    padding-top: 3rem;
 }
 
 .get-burnt {
@@ -351,6 +356,32 @@ nav {
     }
 
     .name-text {
-        font-size:3.3rem;
+        font-size: 3.3rem;
+    }
+
+    .tyler-container {
+        display: flex;
+    }
+
+    .tyler-picture {
+        max-width: 90%;
+        max-height: 90%;
+        aspect-ratio: 16 / 9;
+    }
+
+    .tyler-about {
+        min-width: 600px;
+        font-size: 1.5rem;
+    }
+
+    .tournament-main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tournament-container {
+        max-width: 80%;
+        font-size: 1.5rem;
     }
 }
