@@ -243,7 +243,7 @@ nav {
 
 .t-win {
     color: rgb(57, 151, 57);
-   /* background-color: rgb(57, 151, 57); */
+    /* background-color: rgb(57, 151, 57); */
 }
 
 .tyler-container {
@@ -305,6 +305,24 @@ nav {
     color: var(--text-main-highlight);
 }
 
+.columns {
+    columns: 3 250px;
+    color: var(--text-main-color);
+    background-color: var(--background-color);
+    column-rule: 1px dotted #E3CE04;
+    column-gap: 1rem;
+    text-wrap: wrap;
+}
+
+.you-suck {
+    background-color: var(--background-color);
+    color: var(--text-main-color);
+    font-size: 20rem;
+    min-width: 1000px;
+    height: 500px;
+    text-align: center;
+}
+
 @media (min-width: 640px) {
 
     .body {
@@ -359,18 +377,26 @@ nav {
         font-size: 3.3rem;
     }
 
-    .tyler-container {
+    .tyler-columns {
         display: flex;
+        flex-direction: row;
+        columns: 2 50%;
+        align-items: center;
+    }
+
+    .tyler-image {
+        height: 60%;
+        width: 60%;
     }
 
     .tyler-picture {
         max-width: 90%;
-        max-height: 90%;
-        aspect-ratio: 16 / 9;
+        max-height: auto;
     }
 
     .tyler-about {
-        min-width: 600px;
+        height: 40%;
+        width: 40%;
         font-size: 1.5rem;
     }
 
